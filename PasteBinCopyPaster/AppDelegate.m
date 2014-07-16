@@ -10,9 +10,17 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void)awakeFromNib
 {
-    // Insert code here to initialize your application
+    NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
+    _statusItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
+    [_statusItem setTitle:@"PastebinCopyPaster"];
+    [_statusItem setToolTip:@"This is our tool tip text"];
+    [_statusItem setHighlightMode:YES];
+    [_statusItem setMenu:_statusMenu];
+}
+- (IBAction)doSomething:(NSMenuItem *)sender {
+    NSLog(@"Do something...");
 }
 
 @end
