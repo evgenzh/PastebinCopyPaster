@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E11728F19768BA70035CEE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E11728E19768BA70035CEE7 /* Cocoa.framework */; };
+		5E11729919768BA70035CEE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E11729719768BA70035CEE7 /* InfoPlist.strings */; };
+		5E11729B19768BA70035CEE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11729A19768BA70035CEE7 /* main.m */; };
+		5E11729F19768BA70035CEE7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5E11729D19768BA70035CEE7 /* Credits.rtf */; };
+		5E1172A219768BA70035CEE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1172A119768BA70035CEE7 /* AppDelegate.m */; };
+		5E1172A519768BA70035CEE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1172A319768BA70035CEE7 /* MainMenu.xib */; };
+		5E1172A719768BA70035CEE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1172A619768BA70035CEE7 /* Images.xcassets */; };
+		5E1172AE19768BA70035CEE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1172AD19768BA70035CEE7 /* XCTest.framework */; };
+		5E1172AF19768BA70035CEE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E11728E19768BA70035CEE7 /* Cocoa.framework */; };
+		5E1172B719768BA70035CEE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E1172B519768BA70035CEE7 /* InfoPlist.strings */; };
+		5E1172B919768BA70035CEE7 /* PasteBinCopyPasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1172B819768BA70035CEE7 /* PasteBinCopyPasterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E1172B019768BA70035CEE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E11728319768BA70035CEE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E11728A19768BA70035CEE7;
+			remoteInfo = PasteBinCopyPaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E11728B19768BA70035CEE7 /* PasteBinCopyPaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasteBinCopyPaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E11728E19768BA70035CEE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5E11729119768BA70035CEE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5E11729219768BA70035CEE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5E11729319768BA70035CEE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E11729619768BA70035CEE7 /* PasteBinCopyPaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasteBinCopyPaster-Info.plist"; sourceTree = "<group>"; };
+		5E11729819768BA70035CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E11729A19768BA70035CEE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E11729C19768BA70035CEE7 /* PasteBinCopyPaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasteBinCopyPaster-Prefix.pch"; sourceTree = "<group>"; };
+		5E11729E19768BA70035CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5E1172A019768BA70035CEE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E1172A119768BA70035CEE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E1172A419768BA70035CEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5E1172A619768BA70035CEE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E1172AC19768BA70035CEE7 /* PasteBinCopyPasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasteBinCopyPasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1172AD19768BA70035CEE7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E1172B419768BA70035CEE7 /* PasteBinCopyPasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasteBinCopyPasterTests-Info.plist"; sourceTree = "<group>"; };
+		5E1172B619768BA70035CEE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E1172B819768BA70035CEE7 /* PasteBinCopyPasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteBinCopyPasterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E11728819768BA70035CEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E11728F19768BA70035CEE7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1172A919768BA70035CEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1172AF19768BA70035CEE7 /* Cocoa.framework in Frameworks */,
+				5E1172AE19768BA70035CEE7 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E11728219768BA70035CEE7 = {
+			isa = PBXGroup;
+			children = (
+				5E11729419768BA70035CEE7 /* PasteBinCopyPaster */,
+				5E1172B219768BA70035CEE7 /* PasteBinCopyPasterTests */,
+				5E11728D19768BA70035CEE7 /* Frameworks */,
+				5E11728C19768BA70035CEE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E11728C19768BA70035CEE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E11728B19768BA70035CEE7 /* PasteBinCopyPaster.app */,
+				5E1172AC19768BA70035CEE7 /* PasteBinCopyPasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E11728D19768BA70035CEE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E11728E19768BA70035CEE7 /* Cocoa.framework */,
+				5E1172AD19768BA70035CEE7 /* XCTest.framework */,
+				5E11729019768BA70035CEE7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E11729019768BA70035CEE7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E11729119768BA70035CEE7 /* AppKit.framework */,
+				5E11729219768BA70035CEE7 /* CoreData.framework */,
+				5E11729319768BA70035CEE7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5E11729419768BA70035CEE7 /* PasteBinCopyPaster */ = {
+			isa = PBXGroup;
+			children = (
+				5E1172A019768BA70035CEE7 /* AppDelegate.h */,
+				5E1172A119768BA70035CEE7 /* AppDelegate.m */,
+				5E1172A319768BA70035CEE7 /* MainMenu.xib */,
+				5E1172A619768BA70035CEE7 /* Images.xcassets */,
+				5E11729519768BA70035CEE7 /* Supporting Files */,
+			);
+			path = PasteBinCopyPaster;
+			sourceTree = "<group>";
+		};
+		5E11729519768BA70035CEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E11729619768BA70035CEE7 /* PasteBinCopyPaster-Info.plist */,
+				5E11729719768BA70035CEE7 /* InfoPlist.strings */,
+				5E11729A19768BA70035CEE7 /* main.m */,
+				5E11729C19768BA70035CEE7 /* PasteBinCopyPaster-Prefix.pch */,
+				5E11729D19768BA70035CEE7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E1172B219768BA70035CEE7 /* PasteBinCopyPasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E1172B819768BA70035CEE7 /* PasteBinCopyPasterTests.m */,
+				5E1172B319768BA70035CEE7 /* Supporting Files */,
+			);
+			path = PasteBinCopyPasterTests;
+			sourceTree = "<group>";
+		};
+		5E1172B319768BA70035CEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E1172B419768BA70035CEE7 /* PasteBinCopyPasterTests-Info.plist */,
+				5E1172B519768BA70035CEE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E11728A19768BA70035CEE7 /* PasteBinCopyPaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1172BC19768BA70035CEE7 /* Build configuration list for PBXNativeTarget "PasteBinCopyPaster" */;
+			buildPhases = (
+				5E11728719768BA70035CEE7 /* Sources */,
+				5E11728819768BA70035CEE7 /* Frameworks */,
+				5E11728919768BA70035CEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasteBinCopyPaster;
+			productName = PasteBinCopyPaster;
+			productReference = 5E11728B19768BA70035CEE7 /* PasteBinCopyPaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E1172AB19768BA70035CEE7 /* PasteBinCopyPasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1172BF19768BA70035CEE7 /* Build configuration list for PBXNativeTarget "PasteBinCopyPasterTests" */;
+			buildPhases = (
+				5E1172A819768BA70035CEE7 /* Sources */,
+				5E1172A919768BA70035CEE7 /* Frameworks */,
+				5E1172AA19768BA70035CEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E1172B119768BA70035CEE7 /* PBXTargetDependency */,
+			);
+			name = PasteBinCopyPasterTests;
+			productName = PasteBinCopyPasterTests;
+			productReference = 5E1172AC19768BA70035CEE7 /* PasteBinCopyPasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E11728319768BA70035CEE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Eugene Zhuk";
+				TargetAttributes = {
+					5E1172AB19768BA70035CEE7 = {
+						TestTargetID = 5E11728A19768BA70035CEE7;
+					};
+				};
+			};
+			buildConfigurationList = 5E11728619768BA70035CEE7 /* Build configuration list for PBXProject "PasteBinCopyPaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E11728219768BA70035CEE7;
+			productRefGroup = 5E11728C19768BA70035CEE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E11728A19768BA70035CEE7 /* PasteBinCopyPaster */,
+				5E1172AB19768BA70035CEE7 /* PasteBinCopyPasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E11728919768BA70035CEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E11729919768BA70035CEE7 /* InfoPlist.strings in Resources */,
+				5E1172A719768BA70035CEE7 /* Images.xcassets in Resources */,
+				5E11729F19768BA70035CEE7 /* Credits.rtf in Resources */,
+				5E1172A519768BA70035CEE7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1172AA19768BA70035CEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1172B719768BA70035CEE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E11728719768BA70035CEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1172A219768BA70035CEE7 /* AppDelegate.m in Sources */,
+				5E11729B19768BA70035CEE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1172A819768BA70035CEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1172B919768BA70035CEE7 /* PasteBinCopyPasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E1172B119768BA70035CEE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E11728A19768BA70035CEE7 /* PasteBinCopyPaster */;
+			targetProxy = 5E1172B019768BA70035CEE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E11729719768BA70035CEE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E11729819768BA70035CEE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E11729D19768BA70035CEE7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E11729E19768BA70035CEE7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5E1172A319768BA70035CEE7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E1172A419768BA70035CEE7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5E1172B519768BA70035CEE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E1172B619768BA70035CEE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E1172BA19768BA70035CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5E1172BB19768BA70035CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5E1172BD19768BA70035CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasteBinCopyPaster/PasteBinCopyPaster-Prefix.pch";
+				INFOPLIST_FILE = "PasteBinCopyPaster/PasteBinCopyPaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E1172BE19768BA70035CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasteBinCopyPaster/PasteBinCopyPaster-Prefix.pch";
+				INFOPLIST_FILE = "PasteBinCopyPaster/PasteBinCopyPaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E1172C019768BA70035CEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PasteBinCopyPaster.app/Contents/MacOS/PasteBinCopyPaster";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasteBinCopyPaster/PasteBinCopyPaster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PasteBinCopyPasterTests/PasteBinCopyPasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5E1172C119768BA70035CEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PasteBinCopyPaster.app/Contents/MacOS/PasteBinCopyPaster";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasteBinCopyPaster/PasteBinCopyPaster-Prefix.pch";
+				INFOPLIST_FILE = "PasteBinCopyPasterTests/PasteBinCopyPasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E11728619768BA70035CEE7 /* Build configuration list for PBXProject "PasteBinCopyPaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1172BA19768BA70035CEE7 /* Debug */,
+				5E1172BB19768BA70035CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1172BC19768BA70035CEE7 /* Build configuration list for PBXNativeTarget "PasteBinCopyPaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1172BD19768BA70035CEE7 /* Debug */,
+				5E1172BE19768BA70035CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E1172BF19768BA70035CEE7 /* Build configuration list for PBXNativeTarget "PasteBinCopyPasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1172C019768BA70035CEE7 /* Debug */,
+				5E1172C119768BA70035CEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E11728319768BA70035CEE7 /* Project object */;
+}
