@@ -10,8 +10,9 @@
 
 @interface PastebinRequester : NSObject
 //paste
-+ (void)sendPaste:(NSString *)paste withComletion:(void (^)(NSURL *url))completion;
++ (void)sendPaste:(NSString *)paste withCompletion:(void (^)(NSURL *url))completion;
 
-//profile
-//will be in future
+//login
++ (BOOL)canLogin;
++ (void)loginWithUserName:(NSString *)username passwoed:(NSString *)password withCompletion:(void (^)())completion;
 @end
