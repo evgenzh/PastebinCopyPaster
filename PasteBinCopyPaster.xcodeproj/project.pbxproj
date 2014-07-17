@@ -20,6 +20,7 @@
 		5E1172B919768BA70035CEE7 /* PasteBinCopyPasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1172B819768BA70035CEE7 /* PasteBinCopyPasterTests.m */; };
 		5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426CF1976BB6E00D11915 /* BaseRequest.m */; };
 		5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426D31976BFFA00D11915 /* PasteRequest.m */; };
+		5EC9BB671977FE1B00B13E2B /* GlobalKeyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		5E8426CF1976BB6E00D11915 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		5E8426D21976BFFA00D11915 /* PasteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteRequest.h; sourceTree = "<group>"; };
 		5E8426D31976BFFA00D11915 /* PasteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteRequest.m; sourceTree = "<group>"; };
+		5EC9BB651977FE1B00B13E2B /* GlobalKeyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalKeyLogger.h; sourceTree = "<group>"; };
+		5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalKeyLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +124,7 @@
 		5E11729419768BA70035CEE7 /* PasteBinCopyPaster */ = {
 			isa = PBXGroup;
 			children = (
-				5E8426C91976B93300D11915 /* Requester */,
+				5EC9BB631977FDE800B13E2B /* Managers */,
 				5E1172A019768BA70035CEE7 /* AppDelegate.h */,
 				5E1172A119768BA70035CEE7 /* AppDelegate.m */,
 				5E1172A319768BA70035CEE7 /* MainMenu.xib */,
@@ -178,6 +181,24 @@
 				5E8426D31976BFFA00D11915 /* PasteRequest.m */,
 			);
 			name = Requests;
+			sourceTree = "<group>";
+		};
+		5EC9BB631977FDE800B13E2B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5EC9BB641977FDF500B13E2B /* KeyLogger */,
+				5E8426C91976B93300D11915 /* Requester */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		5EC9BB641977FDF500B13E2B /* KeyLogger */ = {
+			isa = PBXGroup;
+			children = (
+				5EC9BB651977FE1B00B13E2B /* GlobalKeyLogger.h */,
+				5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */,
+			);
+			name = KeyLogger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +302,7 @@
 				5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */,
 				5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */,
 				5E1172A219768BA70035CEE7 /* AppDelegate.m in Sources */,
+				5EC9BB671977FE1B00B13E2B /* GlobalKeyLogger.m in Sources */,
 				5E11729B19768BA70035CEE7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,10 +436,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PasteBinCopyPaster/PasteBinCopyPaster-Prefix.pch";
 				INFOPLIST_FILE = "PasteBinCopyPaster/PasteBinCopyPaster-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,6 +455,7 @@
 				GCC_PREFIX_HEADER = "PasteBinCopyPaster/PasteBinCopyPaster-Prefix.pch";
 				INFOPLIST_FILE = "PasteBinCopyPaster/PasteBinCopyPaster-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = build;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

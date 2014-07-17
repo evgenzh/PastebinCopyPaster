@@ -7,8 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "GlobalKeyLogger.h"
+
+@interface AppDelegate () <GlobalKeyLoggerDelegate>
+{
+    GlobalKeyLogger *_globalKeyLogger;
+}
+@end
 
 @implementation AppDelegate
+
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+    _globalKeyLogger = [[GlobalKeyLogger alloc] init];
+    _globalKeyLogger.delegate = self;
+}
 
 - (void)awakeFromNib
 {
@@ -19,8 +31,21 @@
     [_statusItem setHighlightMode:YES];
     [_statusItem setMenu:_statusMenu];
 }
+
 - (IBAction)doSomething:(NSMenuItem *)sender {
-    NSLog(@"Do something...");
+}
+
+#pragma mark - GlobalKeyLoggerDelegate
+- (void)systemDidReceiveCopyEvent {
+    [_statusItem setTitle:[NSString stringWithFormat:@"COPY!!!"]];
+}
+
+- (void)systemDidReceivePasteEvent {
+    [_statusItem setTitle:[NSString stringWithFormat:@"PASTE!!!"]];
+}
+
+- (void)systemDidReceiveSpecialEvent {
+    [_statusItem setTitle:[NSString stringWithFormat:@"BOOO!!!"]];
 }
 
 @end
