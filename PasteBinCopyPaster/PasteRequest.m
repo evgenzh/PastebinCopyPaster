@@ -25,7 +25,9 @@
 #import "PasteRequest.h"
 
 @interface PasteRequest ()
-@property (nonatomic, strong) NSString *paste;
+{
+    NSString *_paste;
+}
 @end
 
 @implementation PasteRequest
@@ -37,14 +39,12 @@
     return @"paste";
 }
 
-+ (void)sendPaste:(NSString *)paste withComletion:(void (^)(NSURL *url))completion {
-    PasteRequest *request = [PasteRequest new];
-    request.paste = paste;
-    [request sendWithCompletionBlock:^(NSString *result) {
-        if (completion) {
-            completion([NSURL URLWithString:result]);
-        }
-    }];
+- (instancetype)initWithPaste:(NSString *)paste {
+    self = [super init];
+    if (self) {
+        _paste = paste;
+    }
+    return self;
 }
 
 - (void)setupParameters {
@@ -52,6 +52,12 @@
         _parameters = @{
                         @"api_paste_code"   : _paste,
                         };
+    }
+}
+
+- (void)parseResult:(id)result {
+    if (result && [result isKindOfClass:[NSString class]]) {
+        _pastebinURL = [NSURL URLWithString:[result stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     }
 }
 

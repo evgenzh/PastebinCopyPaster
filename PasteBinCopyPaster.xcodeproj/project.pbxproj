@@ -21,6 +21,7 @@
 		5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426CF1976BB6E00D11915 /* BaseRequest.m */; };
 		5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426D31976BFFA00D11915 /* PasteRequest.m */; };
 		5EC9BB671977FE1B00B13E2B /* GlobalKeyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */; };
+		5EC9BB621977F6F000B13E2B /* PastebinRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB611977F6F000B13E2B /* PastebinRequester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		5E8426D31976BFFA00D11915 /* PasteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteRequest.m; sourceTree = "<group>"; };
 		5EC9BB651977FE1B00B13E2B /* GlobalKeyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalKeyLogger.h; sourceTree = "<group>"; };
 		5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalKeyLogger.m; sourceTree = "<group>"; };
+		5EC9BB601977F6F000B13E2B /* PastebinRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebinRequester.h; sourceTree = "<group>"; };
+		5EC9BB611977F6F000B13E2B /* PastebinRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinRequester.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				5E8426CD1976BB5900D11915 /* Requests */,
+				5EC9BB601977F6F000B13E2B /* PastebinRequester.h */,
+				5EC9BB611977F6F000B13E2B /* PastebinRequester.m */,
 			);
 			name = Requester;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */,
+				5EC9BB621977F6F000B13E2B /* PastebinRequester.m in Sources */,
 				5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */,
 				5E1172A219768BA70035CEE7 /* AppDelegate.m in Sources */,
 				5EC9BB671977FE1B00B13E2B /* GlobalKeyLogger.m in Sources */,
