@@ -9,5 +9,7 @@
 #import "BaseRequest.h"
 
 @interface PasteRequest : BaseRequest
-+ (void)sendPaste:(NSString *)paste withComletion:(void (^)(NSURL *url))completion;
+@property (nonatomic, readonly) NSURL *pastebinURL;
+
+- (instancetype)initWithPaste:(NSString *)paste;
 @end

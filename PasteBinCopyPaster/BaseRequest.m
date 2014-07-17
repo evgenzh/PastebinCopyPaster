@@ -40,7 +40,7 @@ NSString * const kDevKey = @"94a4009895c50596fe7dd0c4d6fd1e2a";
     return [NSURL URLWithString:[@"http://pastebin.com/api/" stringByAppendingString:[[self class] apiMethod]]];
 }
 
-- (void)sendWithCompletionBlock:(void (^)(id result))completion {
+- (void)sendWithCompletionBlock:(void (^)(BaseRequest *request))completion {
     __weak BaseRequest *request = self;
     [request setupRequest];
     [NSURLConnection sendAsynchronousRequest:request queue:[[self class] sharedQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -48,8 +48,9 @@ NSString * const kDevKey = @"94a4009895c50596fe7dd0c4d6fd1e2a";
             NSError *error;
             id result = [request resultFromData:data error:&error];
             if (!error) {
+                [request parseResult:result];
                 if (completion) {
-                    completion(result);
+                    completion(request);
                 }
             } else {
                 NSLog(@"Erro!r: %@", [error description]);
@@ -73,8 +74,8 @@ NSString * const kDevKey = @"94a4009895c50596fe7dd0c4d6fd1e2a";
     return [[[self class] alloc] initWithURL:[self url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:DEFAULT_REQUEST_TIMOUT];
 }
 
+//override this method in the child clssses
 - (void)setupParameters {
-//override in the child clssses
 }
 
 - (void)setupRequest {
@@ -93,6 +94,10 @@ NSString * const kDevKey = @"94a4009895c50596fe7dd0c4d6fd1e2a";
 }
 
 #pragma mark - parse
+//override this method in the child clssses
+- (void)parseResult:(id)result {
+}
+
 - (id)resultFromData:(NSData *)data error:(NSError **)error {
     NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     *error = [self findError:result];

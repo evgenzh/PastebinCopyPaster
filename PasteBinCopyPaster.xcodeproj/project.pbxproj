@@ -20,6 +20,7 @@
 		5E1172B919768BA70035CEE7 /* PasteBinCopyPasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1172B819768BA70035CEE7 /* PasteBinCopyPasterTests.m */; };
 		5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426CF1976BB6E00D11915 /* BaseRequest.m */; };
 		5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426D31976BFFA00D11915 /* PasteRequest.m */; };
+		5EC9BB621977F6F000B13E2B /* PastebinRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB611977F6F000B13E2B /* PastebinRequester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		5E8426CF1976BB6E00D11915 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		5E8426D21976BFFA00D11915 /* PasteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteRequest.h; sourceTree = "<group>"; };
 		5E8426D31976BFFA00D11915 /* PasteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteRequest.m; sourceTree = "<group>"; };
+		5EC9BB601977F6F000B13E2B /* PastebinRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebinRequester.h; sourceTree = "<group>"; };
+		5EC9BB611977F6F000B13E2B /* PastebinRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinRequester.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				5E8426CD1976BB5900D11915 /* Requests */,
+				5EC9BB601977F6F000B13E2B /* PastebinRequester.h */,
+				5EC9BB611977F6F000B13E2B /* PastebinRequester.m */,
 			);
 			name = Requester;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */,
+				5EC9BB621977F6F000B13E2B /* PastebinRequester.m in Sources */,
 				5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */,
 				5E1172A219768BA70035CEE7 /* AppDelegate.m in Sources */,
 				5E11729B19768BA70035CEE7 /* main.m in Sources */,

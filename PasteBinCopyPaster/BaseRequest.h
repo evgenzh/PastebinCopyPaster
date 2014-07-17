@@ -16,7 +16,11 @@
 + (NSString *)apiMethod;
 + (NSString *)apiAction;
 
+//overrides
 - (void)setupParameters;
-- (void)sendWithCompletionBlock:(void (^)(id result))completion;
+- (void)parseResult:(id)result;
+
+
+- (void)sendWithCompletionBlock:(void (^)(BaseRequest *request))completion;
 
 @end
