@@ -20,6 +20,9 @@
 - (void)setupParameters;
 - (void)parseResult:(id)result;
 
+//api_user_key
++ (BOOL)apiUserKeyExist;
++ (void)saveApiUserKey:(NSString *)apiUserKey;
 
 - (void)sendWithCompletionBlock:(void (^)(BaseRequest *request))completion;
 
