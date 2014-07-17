@@ -88,7 +88,6 @@ NSString * const kApiUserKeyPath = @"kApiUserKeyPath";
 
 #pragma mark - init
 - (instancetype)init {
-    NSLog(@"%@", [[self class] url]);
     return [super initWithURL:[[self class] url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:DEFAULT_REQUEST_TIMOUT];
 }
 

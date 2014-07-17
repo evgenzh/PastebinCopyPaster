@@ -21,7 +21,9 @@
 		5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426CF1976BB6E00D11915 /* BaseRequest.m */; };
 		5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8426D31976BFFA00D11915 /* PasteRequest.m */; };
 		5EC9BB671977FE1B00B13E2B /* GlobalKeyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */; };
+		5E95C02919780E1F00D7B7DE /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E95C02819780E1F00D7B7DE /* LoginRequest.m */; };
 		5EC9BB621977F6F000B13E2B /* PastebinRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB611977F6F000B13E2B /* PastebinRequester.m */; };
+		5EC9BB671977FE1B00B13E2B /* GlobalKeyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +62,12 @@
 		5E8426D31976BFFA00D11915 /* PasteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteRequest.m; sourceTree = "<group>"; };
 		5EC9BB651977FE1B00B13E2B /* GlobalKeyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalKeyLogger.h; sourceTree = "<group>"; };
 		5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalKeyLogger.m; sourceTree = "<group>"; };
+		5E95C02719780E1F00D7B7DE /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		5E95C02819780E1F00D7B7DE /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		5EC9BB601977F6F000B13E2B /* PastebinRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastebinRequester.h; sourceTree = "<group>"; };
 		5EC9BB611977F6F000B13E2B /* PastebinRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastebinRequester.m; sourceTree = "<group>"; };
+		5EC9BB651977FE1B00B13E2B /* GlobalKeyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalKeyLogger.h; sourceTree = "<group>"; };
+		5EC9BB661977FE1B00B13E2B /* GlobalKeyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalKeyLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,8 @@
 				5E8426CF1976BB6E00D11915 /* BaseRequest.m */,
 				5E8426D21976BFFA00D11915 /* PasteRequest.h */,
 				5E8426D31976BFFA00D11915 /* PasteRequest.m */,
+				5E95C02719780E1F00D7B7DE /* LoginRequest.h */,
+				5E95C02819780E1F00D7B7DE /* LoginRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -304,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E95C02919780E1F00D7B7DE /* LoginRequest.m in Sources */,
 				5E8426D41976BFFA00D11915 /* PasteRequest.m in Sources */,
 				5EC9BB621977F6F000B13E2B /* PastebinRequester.m in Sources */,
 				5E8426D01976BB6E00D11915 /* BaseRequest.m in Sources */,

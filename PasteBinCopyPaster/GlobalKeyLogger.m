@@ -25,15 +25,18 @@ enum KeyCodes {
     self = [super init];
     if (self) {
         _canReceiveSpaecialEvent = NO;
+#ifndef DEBUG
         if (!AXIsProcessTrusted()) {
             NSDictionary *options = @{(__bridge id)kAXTrustedCheckOptionPrompt: @YES};
             AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)options);
+            [NSApp terminate: nil];
         } else {
             __weak GlobalKeyLogger *weakRef = self;
             _eventMonitor = [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyUpMask handler:^(NSEvent *event) {
                 [weakRef handleEvent:event];
             }];
         }
+#endif
     }
     return self;
 }
